@@ -1,7 +1,7 @@
 package reverse_string
 
 func ReverseString(input string) (output string) {
-	rev := make([]rune, len(input))
+	rev := make([]rune, 0)
 	k := len(input) - 1
 	for _, val := range input {
 		rev[k] = val
