@@ -4,7 +4,7 @@ func ReverseString(input string) (output string) {
 	rev := make([]rune, 0)
 	k := len(input) - 1
 	for _, val := range input {
-		rev[k] = val
+		rev = append(rev, val)
 		k--
 	}
 	output = string(rev)
